@@ -13,9 +13,9 @@ public class LoginService implements ILoginService {
 	@Autowired
 	private UserMapper userMapper;
 	
-	public UserBean Login(String name, String pwd) {
+	public UserBean Login(String user_name, String user_pwd) {
 		// TODO Auto-generated method stub
-		return userMapper.login(name, pwd);
+		return userMapper.login(user_name, user_pwd);
 	}
 
 }
